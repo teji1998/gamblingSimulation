@@ -6,11 +6,16 @@ namespace gamblingSimulation
 {
     class Gambling
     {
+        //Constants
         public const int STAKE = 100;
         public const int BET = 1;
         public const int MAXIMUM_WIN = 150;
         public const int MAXIMUM_LOSE = 50;
 
+        /// <summary>
+        /// Wins or lose bet
+        /// </summary>
+        /// <returns></returns>
         public bool WinOrLose()
         {
             Random random = new Random();
@@ -29,6 +34,9 @@ namespace gamblingSimulation
             }
         }
 
+        /// <summary>
+        /// Plays the game to meet resigning condition.
+        /// </summary>
         public void playGame()
         {
             int total = STAKE;
