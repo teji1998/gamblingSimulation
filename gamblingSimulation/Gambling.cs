@@ -57,24 +57,24 @@ namespace gamblingSimulation
             int amount = total - STAKE;
             if (total < 0)
             {
-                Console.WriteLine("Stopped playing after losing : " + total);
+                Console.WriteLine("\nFinal amount for the day after losing : " + total);
             }
             else
             {
-                Console.WriteLine("Stopped playing after winning : " + total);
+                Console.WriteLine("\nFinal amount for the day after winning : " + total);
             }
             return total;
         }
 
-        public void amountFor2oDays()
+        public void amountFor20Days()
         {
             int amount = 0;
-            for (int i = 0; i < numberOfDays; i++)
+            for (int i = 1; i <= numberOfDays; i++)
             {
-                Console.Write("for a day " + (i + 1));
-                amount += playGame();
+                Console.Write("For day " +i);
+                amount = amount + playGame();
             }
-            Console.WriteLine("TotalAmount is::" + amount);
+            Console.WriteLine("Total amount is :" + amount);
             if (amount < 0)
             {
                 Console.WriteLine("Loss occurred" + amount);
