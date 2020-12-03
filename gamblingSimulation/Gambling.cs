@@ -12,7 +12,7 @@ namespace gamblingSimulation
         public const double STAKE_VALUE = 0.5;
         int maximumLose = (int)Math.Round(STAKE * STAKE_VALUE);
         int maximumWin = (int)Math.Round(STAKE + (STAKE * STAKE_VALUE));
-        int numberOfDays = 20;
+        public const int NUMBER_OF_DAYS = 20;
 
 
         /// <summary>
@@ -43,7 +43,7 @@ namespace gamblingSimulation
         public int playGame()
         {
             int total = STAKE;
-            while (total > maximumWin && total < maximumWin)
+            while (total > maximumLose && total < maximumWin)
             {
                 if (winOrLose())
                 {
@@ -54,22 +54,22 @@ namespace gamblingSimulation
                     total = total - BET;
                 }
             }
-            int amount = total - STAKE;
-            if (total < 0)
+            int totalMoney = total - STAKE;
+            if (totalMoney < 0)
             {
-                Console.WriteLine("\nFinal amount for the day after losing : " + total);
+                Console.WriteLine("\nFinal amount for the day after losing : " + totalMoney);
             }
             else
             {
-                Console.WriteLine("\nFinal amount for the day after winning : " + total);
+                Console.WriteLine("\nFinal amount for the day after winning : " + totalMoney);
             }
-            return total;
+            return totalMoney;
         }
 
         public void amountFor20Days()
         {
             int amount = 0;
-            for (int i = 1; i <= numberOfDays; i++)
+            for (int i = 1; i <= NUMBER_OF_DAYS; i++)
             {
                 Console.Write("For day " +i);
                 amount = amount + playGame();
