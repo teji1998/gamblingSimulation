@@ -28,12 +28,10 @@ namespace gamblingSimulation
             if (toss == 1)
             {
                 return true;
-
             }
             else
             {
                 return false;
-
             }
         }
 
@@ -72,7 +70,7 @@ namespace gamblingSimulation
             for (int i = 1; i <= NUMBER_OF_DAYS; i++)
             {
                 Console.Write("For day " +i);
-                amount = amount + playGame();
+                amount +=  playGame();
             }
             Console.WriteLine("Total amount is :" + amount);
             if (amount < 0)
