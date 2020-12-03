@@ -10,23 +10,21 @@ namespace gamblingSimulation
         public const int BET = 1;
         int total;
 
-        public int WinOrLose()
+        public void WinOrLose()
         {
             Random random = new Random();
             int toss = random.Next(0, 2);
+            Console.WriteLine("The toss is : " +toss );
             if (toss == 1)
             {
-                Console.WriteLine("Gambler won 100 dollars" + total);
-                total = STAKE + BET;
-
+                Console.WriteLine("Gambler won 100 dollars" );
+                
             }
             else
             {
-                Console.WriteLine("Gambler loss one dollar" + total);
-                total = STAKE - BET;
+                Console.WriteLine("Gambler lost one dollar" );
 
             }
-            return total;
         }
     }
 }

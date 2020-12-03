@@ -2,3 +2,12 @@ C:\Users\PRITHVIL5\source\repos\gamblingSimulation\gamblingSimulation\obj\Debug\
 C:\Users\PRITHVIL5\source\repos\gamblingSimulation\gamblingSimulation\obj\Debug\netcoreapp3.1\gamblingSimulation.AssemblyInfoInputs.cache
 C:\Users\PRITHVIL5\source\repos\gamblingSimulation\gamblingSimulation\obj\Debug\netcoreapp3.1\gamblingSimulation.AssemblyInfo.cs
 C:\Users\PRITHVIL5\source\repos\gamblingSimulation\gamblingSimulation\obj\Debug\netcoreapp3.1\gamblingSimulation.csproj.CoreCompileInputs.cache
+C:\Users\PRITHVIL5\source\repos\gamblingSimulation\gamblingSimulation\bin\Debug\netcoreapp3.1\gamblingSimulation.exe
+C:\Users\PRITHVIL5\source\repos\gamblingSimulation\gamblingSimulation\bin\Debug\netcoreapp3.1\gamblingSimulation.deps.json
+C:\Users\PRITHVIL5\source\repos\gamblingSimulation\gamblingSimulation\bin\Debug\netcoreapp3.1\gamblingSimulation.runtimeconfig.json
+C:\Users\PRITHVIL5\source\repos\gamblingSimulation\gamblingSimulation\bin\Debug\netcoreapp3.1\gamblingSimulation.runtimeconfig.dev.json
+C:\Users\PRITHVIL5\source\repos\gamblingSimulation\gamblingSimulation\bin\Debug\netcoreapp3.1\gamblingSimulation.dll
+C:\Users\PRITHVIL5\source\repos\gamblingSimulation\gamblingSimulation\bin\Debug\netcoreapp3.1\gamblingSimulation.pdb
+C:\Users\PRITHVIL5\source\repos\gamblingSimulation\gamblingSimulation\obj\Debug\netcoreapp3.1\gamblingSimulation.dll
+C:\Users\PRITHVIL5\source\repos\gamblingSimulation\gamblingSimulation\obj\Debug\netcoreapp3.1\gamblingSimulation.pdb
+C:\Users\PRITHVIL5\source\repos\gamblingSimulation\gamblingSimulation\obj\Debug\netcoreapp3.1\gamblingSimulation.genruntimeconfig.cache
