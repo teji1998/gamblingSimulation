@@ -9,14 +9,17 @@ namespace gamblingSimulation
         //Constants
         public const int STAKE = 100;
         public const int BET = 1;
-        public const int MAXIMUM_WIN = 150;
-        public const int MAXIMUM_LOSE = 50;
+        public const double STAKE_VALUE = 0.5;
+        int maximumLose = (int)Math.Round(STAKE * STAKE_VALUE);
+        int maximumWin = (int)Math.Round(STAKE + (STAKE * STAKE_VALUE));
+        int numberOfDays = 20;
+
 
         /// <summary>
         /// Wins or lose bet
         /// </summary>
         /// <returns></returns>
-        public bool WinOrLose()
+        public bool winOrLose()
         {
             Random random = new Random();
             int toss = random.Next(0, 2);
@@ -37,12 +40,12 @@ namespace gamblingSimulation
         /// <summary>
         /// Plays the game to meet resigning condition.
         /// </summary>
-        public void playGame()
+        public int playGame()
         {
             int total = STAKE;
-            while (total > MAXIMUM_LOSE && total < MAXIMUM_LOSE)
+            while (total > maximumWin && total < maximumWin)
             {
-                if (WinOrLose())
+                if (winOrLose())
                 {
                     total = total + BET;
                 }
@@ -60,6 +63,27 @@ namespace gamblingSimulation
             {
                 Console.WriteLine("Stopped playing after winning : " + total);
             }
+            return total;
+        }
+
+        public void amountFor2oDays()
+        {
+            int amount = 0;
+            for (int i = 0; i < numberOfDays; i++)
+            {
+                Console.Write("for a day " + (i + 1));
+                amount += playGame();
+            }
+            Console.WriteLine("TotalAmount is::" + amount);
+            if (amount < 0)
+            {
+                Console.WriteLine("Loss occurred" + amount);
+            }
+            else
+            {
+                Console.WriteLine("Winning amount" + amount);
+            }
+
         }
     }
 }
